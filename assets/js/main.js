@@ -257,8 +257,14 @@
 
 })(jQuery);
 
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
 
-/*  clock */
-const hours = document.querySelector('.hours');
-const minutes = document.querySelector('.minutes');
-const seconds = document.querySelector('.seconds');
+openModal.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
